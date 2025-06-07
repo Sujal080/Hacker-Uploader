@@ -37,5 +37,8 @@ RUN wget -q https://github.com/axiomatic-systems/Bento4/archive/v1.6.0-639.zip &
 # Install Python packages
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Run the bot
+# ✅ Expose port for Flask server (required by Render)
+EXPOSE 8080
+
+# Start the bot
 CMD ["sh", "-c", "python3 main.py"]
