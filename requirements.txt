@@ -25,7 +25,7 @@ aiofiles
 pytz
 umongo==3.1.0
 speedtest-cli
-Flask==1.1.2
+flask
 gunicorn==20.1.0
 Jinja2==3.0.3
 werkzeug==2.0.2
